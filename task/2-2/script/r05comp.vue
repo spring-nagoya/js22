@@ -1,36 +1,28 @@
 <template>
-    <div>
-        <div class="divTitle">r05comp.vueです。</div>
-        <div>{{ message }}</div>
-    </div>
+  <div>
+    <div class="divTitle">r05comp.vueです。</div>
+    <div class="divMsg">{{ message }}</div>
+  </div>
 </template>
 
 <script>
 module.exports = {
-    data: function () {
-        return {
-            message: "大嶋"
-        }
-    },
-}
+  data: function () {
+    return {
+      message: "片岡",
+    };
+  },
+};
 </script>
 
 <style>
 .divTitle {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #0000ff;
-    background-color: #ff0000;
-    padding: 10px;
-    margin: 10px;
+  color: #ff0000;
 }
+</style>
 
-.divMessage {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #0000ff;
-    background-color: #ff0000;
-    padding: 10px;
-    margin: 10px;
+<style scoped>
+.divMsg {
+  color: #00ff00;
 }
 </style>
