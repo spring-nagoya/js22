@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>sample1-4</title>
+    </head>
+    <style>
+.container {
+  padding: .5rem 2%;
+}
+
+.container {
+  padding: .5rem 2%;
+}
+
+.tab {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.tab-item + .tab-item {
+  margin-left: 1rem;
+}
+
+.tab-content {
+  background: #f1fafa;
+  padding: .5rem;
+}
+    </style>
+<body>
+<div id="app">
+  <div class="container">
+    <h1>Welcome to Vue</h1>
+    <ul class="tab">
+      <li class="tab-item" v-if:currentTab = "1"><button>tab 1</button></li>
+      <li class="tab-item" v-if:currentTab = "2"><button>tab 2</button></li>
+      <li class="tab-item" v-if:currentTab = "3"><button>tab 3</button></li>
+    </ul>
+    <section class="tab-content" v-show="currentTab ==='1'">
+      <h2>Tab 1</h2>
+      <p>Lorem ipsum dolor sit amet, te sed dolor aliquam scripserit, ut blandit recteque ius, eripuit invenire ne duo.</p>
+    </section>
+    <section class="tab-content" v-show="currentTab ==='2'">
+      <h2>Tab 2</h2>
+      <p>At cum scripta admodum, ius habeo postea deterruisset ne, admodum oporteat eu vis. </p>
+    </section>
+    <section class="tab-content" v-show="currentTab ==='3'">
+      <h2>Tab 3</h2>
+      <p>Iuvaret efficiantur at est, eos alienum argumentum ei, nullam imperdiet ad sed.</p>
+    </section>
+  </div>
+</div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>sample1-2</title>
+    </head>
+    <style>
+.container {
+  padding: .5rem 2%;
+}
+
+.notification {
+  background: #0093E3;
+  border-radius: 4px;
+  color: white;
+  padding: 1rem;
+}
+    </style>
+<body>
+<div id="app">
+  <div class="container">
+    <h1>Welcome to Vue</h1>
+  <p>
+      I am :
+      <i class="fa fa-mars icon" v-if="user.gender==='male'"></i>
+      <i class="fa fa-venus icon" v-else-if="user.gender ==='female'"></i>
+      <i class="fa fa-transgender icon" v-else=""></i>
+    </p>
+  </div>
+</div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

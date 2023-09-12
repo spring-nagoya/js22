@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>sample1-7</title>
+    </head>
+    <style>
+    .container-fluid {
+      padding: 1rem 2%;
+    }
+
+    .table {
+      table-layout: fixed;
+    }
+
+    .table tr td {
+      vertical-align: middle;
+    }
+
+    .table tr td {
+      word-wrap: break-word;
+    }
+
+    input[type="file"] {
+      overflow: hidden;
+    }
+    </style>
+<body>
+  <div id="app">
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <colgroup>
+          <col width="50%">
+          <col width="50%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Form</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Text</label>
+                <input v-model="message" type="text" class="form-control">
+              </div>
+            </td>
+            <td> {{ message }} </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Textarea</label>
+                <textarea v-model="description" class="form-control"></textarea>
+              </div>
+            </td>
+            <td><pre class="mb-0"> {{ description }} </pre></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

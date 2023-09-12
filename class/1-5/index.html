@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>sample1-4</title>
+    </head>
+    <style>.container {
+  padding: .5rem 2%;
+}
+
+.table {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dedede;
+  padding: .5em;
+  text-align: center;
+}
+    </style>
+<div id="app">
+  <div class="container">
+    <h1>Welcome to Vue</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Creator</th>
+          <th>Github Stars</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="frame in frameworks"> 
+          <td>{{frame.name}}</td>
+          <td>{{frame.creator}}</td>
+          <td>{{frame.stars}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>
