@@ -1,5 +1,5 @@
 <template>
     <div>
         {{ this.$route.params.userBtn }}です
-   </div>
+    </div>
 </template>
